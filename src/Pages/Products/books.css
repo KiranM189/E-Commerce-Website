@@ -1,0 +1,101 @@
+/* Styling for the overall page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styling for the Navbar component */
+  .navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+  
+  /* Styling for section headers */
+  h1 {
+    font-size: 28px;
+    margin-top: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Styling for horizontal rule */
+  hr {
+    border: none;
+    border-top: 2px solid #333;
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  /* Styling for book collections */
+  .collections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Styling for individual book items */
+  .item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    width: 220px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+    width: auto;
+  }
+  
+  .item:hover {
+    transform: scale(1.05);
+  }
+  
+  .item img {
+    max-width: 50%; /* Set the image max width to 50% */
+    height: auto;
+    margin: 10px 0;
+  }
+  
+  .item h2 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .item .price {
+    font-size: 18px;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .item .discount {
+    font-size: 16px;
+    color: #555;
+    text-decoration: line-through;
+  }
+  
+  /* Styling for specific sections */
+  .travel {
+    background-color: #f2f2f2;
+    padding: 40px;
+  }
+  
+  fiction {
+    background-color: #d6e9c6;
+    padding: 40px;
+  }
+  
+  science {
+    background-color: #a4c7f2;
+    padding: 40px;
+  }
+  
+  business {
+    background-color: #ffebcd;
+    padding: 40px;
+  }
+  

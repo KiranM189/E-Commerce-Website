@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.css'
-import logo from '../../Assets/Logo.jpg'
+import logo from '../../Assets/logo_02.png'
 import {useState, useEffect} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Dropdown from 'react-bootstrap/Dropdown'
@@ -49,10 +49,10 @@ const Navbar = () => {
           <Dropdown>
             <Dropdown.Toggle variant="success" id="dropdown-basic">Categories</Dropdown.Toggle>
             <Dropdown.Menu>
-              <Dropdown.Item>Books</Dropdown.Item>
+              <Dropdown.Item href ='/books'>Books</Dropdown.Item>
               <Dropdown.Item href='/clothing'>Clothing</Dropdown.Item>
-              <Dropdown.Item>Electronics</Dropdown.Item>
-              <Dropdown.Item>Grocery</Dropdown.Item>
+              <Dropdown.Item href ='/Electronics'>Electronics</Dropdown.Item>
+              <Dropdown.Item href ='/Grocery'>Grocery</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
           <Link to='/about' className='stylenone'>

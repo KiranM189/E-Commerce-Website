@@ -12,6 +12,12 @@ import PrivacyPolicy from './Pages/Extra/PrivacyPolicy'
 import UserProfile from './Pages/User/UserProfile'
 import About from './Pages/Extra/About'
 import Clothing from './Pages/Products/Clothing'
+import Books from './Pages/Products/books';
+import Electronics from './Pages/Products/Electronics'
+import Grocery from './Pages/Products/grocery'
+
+
+
 
 const App = () => {
   return(
@@ -27,6 +33,12 @@ const App = () => {
         <Route path='/privacypolicy' element={<PrivacyPolicy />} />
         <Route path='/user/:activepage' element={<UserProfile />} />
         <Route path='/clothing' element={<Clothing />} />
+      <Route path = '/books' element={<Books />} />
+      <Route path = '/Electronics' element={<Electronics/>} />
+      <Route path = '/Grocery' element={<Grocery/>} />
+
+     
+
         <Route path="*" element={<div>
           <h1>404 Not Found</h1>
         </div>} />
