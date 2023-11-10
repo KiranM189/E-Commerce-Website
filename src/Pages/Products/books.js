@@ -6,7 +6,7 @@ import science from '../../Assets/science';
 import travel from '../../Assets/travel';
 import business from '../../Assets/business';
 import fiction from '../../Assets/fiction';
-
+import Footer from '../../Components/Footer/Footer'
 const Book = ()=> {
   return (
     <div >
@@ -64,6 +64,7 @@ const Book = ()=> {
             })}
          </div>
     </div>
+    <Footer/>
     </div>
    ) ;
   

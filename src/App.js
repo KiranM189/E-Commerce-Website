@@ -15,7 +15,8 @@ import Clothing from './Pages/Products/Clothing'
 import Books from './Pages/Products/books';
 import Electronics from './Pages/Products/Electronics'
 import Grocery from './Pages/Products/grocery'
-
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Product_display from './Pages/Product_display/Product_display';
 
 
 
@@ -36,9 +37,9 @@ const App = () => {
       <Route path = '/books' element={<Books />} />
       <Route path = '/Electronics' element={<Electronics/>} />
       <Route path = '/Grocery' element={<Grocery/>} />
-
-     
-
+      <Route path='/product' element={<Product_display/>}>
+        <Route path=':productId' element={<Product_display/>}/>
+      </Route>
         <Route path="*" element={<div>
           <h1>404 Not Found</h1>
         </div>} />

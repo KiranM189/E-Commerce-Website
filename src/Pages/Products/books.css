@@ -84,18 +84,18 @@ body {
     padding: 40px;
   }
   
-  fiction {
-    background-color: #d6e9c6;
+  .fiction {
+    background-color:  #f2f2f2;
     padding: 40px;
   }
   
-  science {
-    background-color: #a4c7f2;
+  .science {
+    background-color:  #f2f2f2;
     padding: 40px;
   }
   
-  business {
-    background-color: #ffebcd;
+  .business {
+    background-color: #f2f2f2;
     padding: 40px;
   }
   
