@@ -1,0 +1,71 @@
+/* grocery.css */
+
+/* Style the Grocery component */
+.grocery {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Style the "Today's deals" heading */
+  .grocery h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the horizontal line */
+  .grocery hr {
+    border: 1px solid #ddd;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the collections container */
+  .collections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Style each individual item */
+  .item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Style the item image */
+  .item img {
+    max-width: 50%;
+    height: auto;
+  }
+  
+  /* Style the item name */
+  .item h2 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  /* Style the new and old prices */
+  .item .price {
+    font-size: 16px;
+  }
+  
+  /* Style the discount badge (you can adjust the colors) */
+  .item .discount-badge {
+    background-color: #ff5722;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  /* Style the Navbar (if needed) */
+  .navbar {
+    background-color: #333;
+    color: #fff;
+  }
+  
