@@ -16,7 +16,7 @@ import Books from './Pages/Products/books';
 import Electronics from './Pages/Products/Electronics'
 import Grocery from './Pages/Products/grocery'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Product_display from './Pages/Product_display/Product_display';
+import Product_display from './Pages/Product_display/Product_display_element'
 
 
 
@@ -34,12 +34,11 @@ const App = () => {
         <Route path='/privacypolicy' element={<PrivacyPolicy />} />
         <Route path='/user/:activepage' element={<UserProfile />} />
         <Route path='/clothing' element={<Clothing />} />
-      <Route path = '/books' element={<Books />} />
-      <Route path = '/Electronics' element={<Electronics/>} />
-      <Route path = '/Grocery' element={<Grocery/>} />
-      <Route path='/product' element={<Product_display/>}>
-        <Route path=':productId' element={<Product_display/>}/>
-      </Route>
+        <Route path = '/books' element={<Books />} />
+        <Route path = '/Electronics' element={<Electronics/>} />
+        <Route path = '/Grocery' element={<Grocery/>} />
+        <Route path='/product' element={<Product_display/>}/>
+          <Route path=':productId' element={Product_display}/>
         <Route path="*" element={<div>
           <h1>404 Not Found</h1>
         </div>} />

@@ -4,11 +4,11 @@ import all_products from '../../Assets/all_products';
 import { useParams } from 'react-router-dom';
 
 const Product_display = () => {
-    const {productId}=useParams();
-    const productobj=all_products.find((e)=>e.id===Number(productId));
+    const params=useParams();
+    const product = all_products.find((e)=>e.id===Number(params.productId));
   return (
     <div>
-      <Product_display_element product={productobj}/>
+      <Product_display_element product={product}/>
     </div>
   )
 }
