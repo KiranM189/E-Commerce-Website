@@ -38,7 +38,7 @@ const App = () => {
         <Route path = '/Electronics' element={<Electronics/>} />
         <Route path = '/Grocery' element={<Grocery/>} />
         <Route path='/product' element={<Product_display/>}/>
-          <Route path=':productId' element={Product_display}/>
+          <Route path=':productId' element={<Product_display/>}/>
         <Route path="*" element={<div>
           <h1>404 Not Found</h1>
         </div>} />

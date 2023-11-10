@@ -29,7 +29,7 @@ const Product_display_element = (props) =>{
                 <div>XL</div>
                 <div>XXL</div>
             </div>
-            <button onClick={setCartquantity}>ADD TO CART</button>
+            <button>ADD TO CART</button>
         </div>
         <div className="left">
             <div className="main-img">

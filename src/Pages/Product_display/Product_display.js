@@ -13,4 +13,4 @@ const Product_display = () => {
   )
 }
 
-export default Product_display
+export default Product_display;
