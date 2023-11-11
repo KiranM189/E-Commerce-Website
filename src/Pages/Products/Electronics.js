@@ -11,7 +11,6 @@ import laptop_banner from '../../Assets/laptop_banner.jpg';
 import phone_banner from '../../Assets/Phone_banner.jpg';
 import smartwatch_banner from '../../Assets/smartwatch_banner.jpg';
 import headphone_banner from '../../Assets/headphones_banner.gif';
-import { Link } from 'react-router-dom';
 const Electronics = () => {
   return (
     <div>
@@ -56,7 +55,7 @@ const Electronics = () => {
         </div>
       </div>
 
-      <div className="smartwatch"> {/* Corrected class name */}
+      <div className="smartwatch"> 
         <h1>Smart Watches</h1>
         <img className='banners' src={smartwatch_banner} alt="" />
         <hr />

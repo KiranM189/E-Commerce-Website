@@ -7,7 +7,7 @@ import Dropdown from 'react-bootstrap/Dropdown'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
-  const [cartQuantity, setCartQuantity] = useState(0)
+  const cartQuantity = 0;
   return (
     <nav>
         <div className='top'>

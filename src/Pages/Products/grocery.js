@@ -1,27 +1,19 @@
 import React from 'react'
-<<<<<<< HEAD
-import { Navbar } from 'react-bootstrap'
-import Footer from '../../Components/Footer/Footer'
-=======
 import Navbar from '../../Components/Navbar/Navbar';
 import './grocery.css';
 import Item from '../../Components/Item/Item';
 import grocery from '../../Assets/g_01';
->>>>>>> 4fd692e4cb70ac28ee437987de2c8099b7e43673
+import grocery3_banner from '../../Assets/grocery3_banner.jpg';
 const Grocery = () => {
   return (
     <div>
         <Navbar/>
-<<<<<<< HEAD
-          
-        <Footer/>
-=======
         <div className ="grocery">
           <h1>
             Today's deals
           </h1>
+          <img className='banners' src={grocery3_banner} alt="" />
           <hr/>
-          
           <div className = "collections">
             {grocery.map((item,i)=>
             {
@@ -31,10 +23,9 @@ const Grocery = () => {
           
         </div>
     
->>>>>>> 4fd692e4cb70ac28ee437987de2c8099b7e43673
       
     </div>
   )
 }
 
-export default Grocery
+export default Grocery;
