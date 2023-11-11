@@ -10,13 +10,13 @@ import ForgotPassword from './Pages/Auth/ForgotPassword'
 import FAQ from './Pages/Extra/FAQ'
 import PrivacyPolicy from './Pages/Extra/PrivacyPolicy'
 import UserProfile from './Pages/User/UserProfile'
-import About from './Pages/Extra/About'
-import Clothing from './Pages/Products/Clothing'
+import About from './Pages/Extra/About';
+import Clothing from './Pages/Products/Clothing';
 import Books from './Pages/Products/books';
 import Electronics from './Pages/Products/Electronics'
 import Grocery from './Pages/Products/grocery'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Product_display from './Pages/Product_display/Product_display.js';
+import Product_display from './Pages/Product_display/Product_display';
 
 
 
@@ -37,7 +37,9 @@ const App = () => {
         <Route path = '/Books' element={<Books />} />
         <Route path = '/Electronics' element={<Electronics/>} />
         <Route path = '/Grocery' element={<Grocery/>} />
-        <Route path='/product/:productId' element={<Product_display />} />
+        <Route path='/product' element={<Product_display/>}>
+          <Route path=':productId' element={<Product_display/>}/>
+        </Route>
         <Route path="*" element={<div>
           <h1>404 Not Found</h1>
         </div>} />
