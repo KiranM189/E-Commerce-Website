@@ -5,6 +5,7 @@ import books_banner from '../../Assets/Books_Banner.jpeg'
 import clothes_banner from '../../Assets/Clothes_Banner.jpeg'
 import electronics_banner from '../../Assets/Electronics_Banner.jpeg'
 import grocery_banner from '../../Assets/Grocery_Banner.jpg'
+import { Link } from 'react-router-dom';
 
 const BannerSlider = () => {
   const data = [
@@ -13,28 +14,28 @@ const BannerSlider = () => {
       image: books_banner,
       title: 'Books',
       description: 'Books on the Shelf',
-      button: 'https://www.google.com'
+  
     },
     {
       id: 2,
       image: clothes_banner,
-      title: 'Clothes',
+      title: 'Clothing',
       description: 'Clothes in the Wardrobe',
-      button: 'https://www.google.com'
+    
     },
     {
       id: 3,
       image: electronics_banner,
       title: 'Electronics',
       description: 'Explore the world of electronics',
-      button: 'https://www.google.com'
+  
     },
     {
       id: 4,
       image: grocery_banner,
       title: 'Grocery',
       description: 'Grocery at your Doorstep',
-      button: 'https://www.google.com'
+  
     }
   ]
 
@@ -59,7 +60,9 @@ const BannerSlider = () => {
                 <div className='banner-slider-item-content'>
                   <h1>{item.title}</h1>
                   <p>{item.description}</p>
-                  <button>Shop Now</button>
+                  <Link to={`/${item.title}`}>
+                    <button>Shop Now</button>
+                  </Link>
                 </div>
               </div>)
           })

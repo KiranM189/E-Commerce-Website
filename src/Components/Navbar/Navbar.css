@@ -62,12 +62,13 @@ nav .search-bar svg:hover
 nav .top .right
 {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     gap: 10px;
     align-items: center;
 }
 nav .cart
-{
+{   
     margin: 20px;
     position: relative;
 }

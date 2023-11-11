@@ -1,13 +1,13 @@
 import React from 'react'
 import './Navbar.css'
 import logo from '../../Assets/logo_02.png'
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Dropdown from 'react-bootstrap/Dropdown'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
-  const [cartQuantity, setCartQuantity] = useState(0)
+  const cartQuantity = 0;
   return (
     <nav>
         <div className='top'>

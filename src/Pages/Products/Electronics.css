@@ -60,6 +60,12 @@ body {
     color: #ff6600;
     font-weight: bold;
   }
+  .banners{
+    display: block;
+    margin: 30px auto;
+    width: 82%;
+    margin-top: 5px;
+  }
   
   /* Media query for responsive design */
   @media (max-width: 768px) {

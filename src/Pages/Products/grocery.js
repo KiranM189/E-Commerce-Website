@@ -3,6 +3,7 @@ import Navbar from '../../Components/Navbar/Navbar';
 import './grocery.css';
 import Item from '../../Components/Item/Item';
 import grocery from '../../Assets/g_01';
+import grocery3_banner from '../../Assets/grocery3_banner.jpg';
 const Grocery = () => {
   return (
     <div>
@@ -11,8 +12,8 @@ const Grocery = () => {
           <h1>
             Today's deals
           </h1>
+          <img className='banners' src={grocery3_banner} alt="" />
           <hr/>
-          
           <div className = "collections">
             {grocery.map((item,i)=>
             {
@@ -27,4 +28,4 @@ const Grocery = () => {
   )
 }
 
-export default Grocery
+export default Grocery;

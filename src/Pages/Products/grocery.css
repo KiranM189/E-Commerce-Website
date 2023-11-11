@@ -62,7 +62,12 @@
     font-size: 14px;
     margin-top: 5px;
   }
-  
+  .banners{
+    display: block;
+    margin: 30px auto;
+    width: 82%;
+    margin-top: 5px;
+  }
   /* Style the Navbar (if needed) */
   .navbar {
     background-color: #333;
