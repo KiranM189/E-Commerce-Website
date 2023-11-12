@@ -22,17 +22,16 @@ const Electronics = () => {
         <hr />
 
         <div className="collections">
-          {mobile.map((item, i) => {
-            return (
-              <Item
-                key={i}
-                name={item.name}
-                image={item.image}
-                new_price={item.new_price}
-                old_price={item.old_price}
-              />
-            );
-          })}
+        {mobile.map((item, i) => (
+                  <Item
+                    key={i}
+                    id={item.id}
+                    name={item.name}  
+                    image={item.image}
+                    new_price={item.new_price}
+                    old_price={item.old_price}
+                  />
+              ))}
         </div>
       </div>
 
@@ -41,17 +40,16 @@ const Electronics = () => {
         <img className="banners" src={laptop_banner} alt="" />
         <hr />
         <div className="collections">
-          {laptop.map((item, i) => {
-            return (
-              <Item
-                key={i}
-                name={item.name}
-                image={item.image}
-                new_price={item.new_price}
-                old_price={item.old_price}
-              />
-            );
-          })}
+        {laptop.map((item, i) => (
+                  <Item
+                    key={i}
+                    id={item.id}
+                    name={item.name}  
+                    image={item.image}
+                    new_price={item.new_price}
+                    old_price={item.old_price}
+                  />
+              ))}
         </div>
       </div>
 
@@ -60,17 +58,16 @@ const Electronics = () => {
         <img className='banners' src={smartwatch_banner} alt="" />
         <hr />
         <div className="collections">
-          {smartwatch.map((item, i) => {
-            return (
-              <Item
-                key={i}
-                name={item.name}
-                image={item.image}
-                new_price={item.new_price}
-                old_price={item.old_price}
-              />
-            );
-          })}
+        {smartwatch.map((item, i) => (
+                  <Item
+                    key={i}
+                    id={item.id}
+                    name={item.name}  
+                    image={item.image}
+                    new_price={item.new_price}
+                    old_price={item.old_price}
+                  />
+              ))}
         </div>
       </div>
 
@@ -79,17 +76,16 @@ const Electronics = () => {
         <img className='banners' src={headphone_banner} alt="" />
         <hr />
         <div className="collections">
-          {headphone.map((item, i) => {
-            return (
-              <Item
-                key={i}
-                name={item.name}
-                image={item.image}
-                new_price={item.new_price}
-                old_price={item.old_price}
-              />
-            );
-          })}
+        {headphone.map((item, i) => (
+                  <Item
+                    key={i}
+                    id={item.id}
+                    name={item.name}  
+                    image={item.image}
+                    new_price={item.new_price}
+                    old_price={item.old_price}
+                  />
+              ))}
         </div>
       </div>
       <Footer/>

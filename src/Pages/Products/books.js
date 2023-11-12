@@ -22,12 +22,18 @@ const Book = ()=> {
           </h1>
           <img className='banners' src={books5_banner} alt="" />
           <hr/>
-          
           <div className = "collections">
-            {travel.map((item,i)=>
-            {
-              return <Item key = {i} id = {travel.id} name = {item.name} image ={item.image} new_price = {item.new_price} old_price ={item.old_price}/>
-            })}
+          {travel.map((item, i) => (
+                  <Item
+                    key={i}
+                    id={item.id}
+                    name={item.name}  
+                    image={item.image}
+                    new_price={item.new_price}
+                    old_price={item.old_price}
+                  />
+              ))}
+        
           </div>
           
         </div>
@@ -39,10 +45,16 @@ const Book = ()=> {
             <img className='banners' src={books3_banner} alt="" />
             <hr/>
             <div className = "collections">
-            {fiction.map((item,i)=>
-            {
-              return <Item key = {i} id = {fiction.id} name = {item.name} image ={item.image} new_price = {item.new_price} old_price ={item.old_price}/>
-            })}
+            {fiction.map((item, i) => (
+                  <Item
+                    key={i}
+                    id={item.id}
+                    name={item.name}  
+                    image={item.image}
+                    new_price={item.new_price}
+                    old_price={item.old_price}
+                  />
+              ))}
           </div>
 
 
@@ -54,11 +66,17 @@ const Book = ()=> {
             <img className='banners' src={books7_banner} alt="" />
             <hr/>
             <div className = "collections">
-            {science.map((item,i)=>
-            {
-              return <Item key = {i} id = {science.id} name = {item.name} image ={item.image} new_price = {item.new_price} old_price ={item.old_price}/>
-            })}
-         </div>
+            {science.map((item, i) => (
+                  <Item
+                    key={i}
+                    id={item.id}
+                    name={item.name}  
+                    image={item.image}
+                    new_price={item.new_price}
+                    old_price={item.old_price}
+                  />
+              ))}
+            </div>
     </div>
     <div className='business'>
         <h1>
@@ -67,11 +85,17 @@ const Book = ()=> {
             <img className='banners' src={books4_banner} alt="" />
             <hr/>
             <div className = "collections">
-            {business.map((item,i)=>
-            {
-              return <Item key = {i} id = {business.id} name = {item.name} image ={item.image} new_price = {item.new_price} old_price ={item.old_price}/>
-            })}
-         </div>
+            {business.map((item, i) => (
+                  <Item
+                    key={i}
+                    id={item.id}
+                    name={item.name}  
+                    image={item.image}
+                    new_price={item.new_price}
+                    old_price={item.old_price}
+                  />
+              ))}
+            </div>
     </div>
     <Footer/>
     </div>

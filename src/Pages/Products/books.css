@@ -37,7 +37,7 @@ body {
   }
   
   /* Styling for individual book items */
-  .item {
+  Link .item {
     background-color: #fff;
     border: 1px solid #ddd;
     margin: 10px;
@@ -50,33 +50,37 @@ body {
     width: auto;
   }
   
-  .item:hover {
+  Link.item:hover {
     transform: scale(1.05);
   }
   
+
+   
   .item img {
     max-width: 50%; /* Set the image max width to 50% */
     height: auto;
     margin: 10px 0;
   }
+ 
   
-  .item h2 {
+  
+Link  .item h2 {
     font-size: 20px;
     margin: 10px 0;
     color: #333;
   }
   
-  .item .price {
+Link  .item .price {
     font-size: 18px;
     color: #007bff;
     font-weight: bold;
   }
   
-  .item .discount {
+Link  .item .discount {
     font-size: 16px;
     color: #555;
     text-decoration: line-through;
-  }
+  } 
   
   /* Styling for specific sections */
   .travel {

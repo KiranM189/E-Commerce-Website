@@ -20,10 +20,16 @@ const Clothing = () => {
           <img className='banners' src={mens_banner} alt="" />
           <hr/>
           <div className = "collections">
-            {men.map((item,i)=>
-            {
-              return <Item key = {i} id = {men.id} name = {item.name} image ={item.image} new_price = {item.new_price} old_price ={item.old_price}/>
-            })}
+          {men.map((item, i) => (
+                  <Item
+                    key={i}
+                    id={item.id}
+                    name={item.name}  
+                    image={item.image}
+                    new_price={item.new_price}
+                    old_price={item.old_price}
+                  />
+              ))}
           </div>
         </div>
         <div className = 'womens'>
@@ -33,12 +39,18 @@ const Clothing = () => {
             <img className='banners' src={women_banner} alt="" />
             <hr/>
             
-            <div className = "collections">
-            {women.map((item,i)=>
-            {
-              return <Item key = {i} id = {men.id} name = {item.name} image ={item.image} new_price = {item.new_price} old_price ={item.old_price}/>
-            })}
-        </div>
+          <div className = "collections">
+          {women.map((item, i) => (
+                  <Item
+                    key={i}
+                    id={item.id}
+                    name={item.name}  
+                    image={item.image}
+                    new_price={item.new_price}
+                    old_price={item.old_price}
+                  />
+              ))}
+          </div>
         </div>
         <div className='kids'>
             <h1>
@@ -46,11 +58,17 @@ const Clothing = () => {
             </h1>
             <img className='banners' src={kid_banner} alt="" />
             <hr/>
-            <div className = "collections">
-            {kid.map((item,i)=>
-            {
-              return <Item key = {i} id = {men.id} name = {item.name} image ={item.image} new_price = {item.new_price} old_price ={item.old_price}/>
-            })}
+          <div className = "collections">
+          {kid.map((item, i) => (
+                  <Item
+                    key={i}
+                    id={item.id}
+                    name={item.name}  
+                    image={item.image}
+                    new_price={item.new_price}
+                    old_price={item.old_price}
+                  />
+              ))}
          </div>
          </div>
          <Footer/>
