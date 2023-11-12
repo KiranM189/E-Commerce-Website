@@ -11,6 +11,11 @@ const Product_display_element = (props) =>{
     <div>
         <Navbar/>
     <div className='product-display'>
+        <div className="left">
+            <div className="main-img">
+                <img src={product.image} alt="" />
+            </div>
+        </div>
         <div className="right">
             <h1>{product.name}</h1>
             <div className="stars">
@@ -33,12 +38,6 @@ const Product_display_element = (props) =>{
             </div>
             <button>ADD TO CART</button>
         </div>
-        <div className="left">
-            <div className="main-img">
-                <img src={product.image} alt="" />
-            </div>
-        </div>
-      
     </div>
     <Footer/>
     </div>
