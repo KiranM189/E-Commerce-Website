@@ -8,12 +8,14 @@
     gap: 17px;
 }
 .main-img{
-    width: 586px;
+    width: auto;
 }
 .right{
     margin: 0px 70px;
     display: flex;
     flex-direction: column;
+    width: 500px;
+    padding: 0px;
 }
 .right h1{
     color: #3D3D3D;
@@ -28,7 +30,7 @@
     color: #1c1c1c;
     font-size: 16px;
 }
-.prices{
+.new-prices{
     display: flex;
     margin: 40px 0px;
     gap: 30px;
@@ -65,4 +67,7 @@
     border: none;
     outline: none;
     cursor: pointer;
+}
+.img-list{
+    height: 163px;
 }
