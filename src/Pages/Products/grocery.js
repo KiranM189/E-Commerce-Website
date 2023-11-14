@@ -4,6 +4,7 @@ import './grocery.css';
 import Item from '../../Components/Item/Item';
 import grocery from '../../Assets/g_01';
 import grocery3_banner from '../../Assets/grocery3_banner.jpg';
+import Footer from '../../Components/Footer/Footer';
 const Grocery = () => {
   return (
     <div>
@@ -26,10 +27,8 @@ const Grocery = () => {
                   />
               ))}
           </div>
-          
         </div>
-    
-      
+        <Footer/>
     </div>
   )
 }
